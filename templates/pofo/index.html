@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+    <html lang="en">
+    {% load static %}
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="x-icon" href="{% static 'img/logo2.png' %}">
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="{% static 'css/swiper_bundle.css' %}">
+
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+        <title>Responsive Portfolio Website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav_logo">Kunal</a>
+
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list grid">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link">
+                                <i class="uil uil-home nav_icon "></i> Home
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#about" class="nav_link">
+                                <i class="uil uil-user-circle nav_icon"></i> About
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#skills" class="nav_link">
+                                <i class="uil uil-file nav_icon"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#team" class="nav_link">
+                                <i class="uil uil-users-alt nav_icon"></i> Team
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#project" class="nav_link">
+                                <i class="uil uil-scenery nav_icon"></i> Project
+                            </a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#contact" class="nav_link">
+                                <i class="uil uil-message nav_icon"></i> Contactme
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav_close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/kunal-verma-3254a1201" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+
+                            <a href="https://www.instagram.com/kunalverma0621" target="_blank" class="home__social-icon">
+                                <i class="uil uil-instagram-alt"></i>
+                            </a>
+
+                            <a href="https://twitter.com/KunalVe49986001?s=09" target="_blank" class="home__social-icon">
+                                <i class="uil uil-twitter"></i>
+                            </a>
+
+                            <a href="https://github.com/KunalVerma0621" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github"></i>
+                            </a>
+                        </div>
+                        <div class="home__img">
+                            <!-- <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                    <image class="home__blob-img" x='12' y='5' xlink:href="assets/img/kunal.jpg"/>
+                                </g>
+                            </svg> -->
+                            <img src="{% static 'img/kunal.jpg'%}" alt="">
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I'm Kunal</h1>
+                            <h3 class="home__subtitle">Full Stack Web Developer</h3>
+                            <p class="home__description">I Build value through design. <br>It's all problems and solution; how may I be of service to you.</p>
+                            <a href="mailto:vermakunal0601@gmail.com" class="button button--flex">
+                                Hire Me<i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <sapn class="section__subtitle">My Introduction</sapn>
+
+                <div class="about__container container grid">
+                    <img src="{% static 'img/verma.jpg' %}" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <p class="about__description">My name is Kunal Verma and I'm Computer Science Student from MD University,Rohtak.</p>
+
+                        <p class="about__description">My portfolio is a representation of all that I've learned and accomplished as a science and engineering student</p>
+
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">01+</span>
+                                <span class="about__info-name">Years <br> experience</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">04+</span>
+                                <span class="about__info-name">Completed <br> project</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">01+</span>
+                                <span class="about__info-name">Internship</span>
+                            </div>
+                        </div>
+                        <div class="about__buttons">
+                            <a download="" href="{% static 'pdf/kunal Verma-Resume.pdf' %}" class="button button-flex">
+                                Download CV<i class="uil uil-file button__icon"></i>
+                             </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+             <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My technical level</span>
+
+                <div class="skills__container container grid">
+                    <div>
+                        <div class="skills__content">
+                            <p>I have ability to do the work which will assigned to me.I'm able to invent new websites in an effective and efficient manner and I m very curious to learn the new things.</p>
+                        </div>
+                            <div class="skills__list grid">
+                                <div class="shills__date">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__number">100%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__html"></span>
+                                    </div>
+                                </div>
+
+                                <div class="shills__date">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__css"></span>
+                                    </div>
+                                </div>
+                                <div class="shills__date">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__js"></span>
+                                    </div>
+                                </div>
+                                <div class="shills__date">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">BootStrap</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__bootstrap"></span>
+                                    </div>
+                                </div>
+                                <div class="shills__date">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">SQL</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sql"></span>
+                                    </div>
+                                </div>
+                                <div class="shills__date">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">Django</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__django"></span>
+                                    </div>
+                                </div>
+                                <div class="shills__date">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__number">78%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__python"></span>
+                                    </div>
+                                </div>
+                                <div class="shills__date">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">C</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__c"></span>
+                                    </div>
+                                </div>
+                                <div class="shills__date">
+                                    <div class="skills__title">
+                                        <h3 class="skills__name">C++</h3>
+                                        <span class="skills__number">95%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__object"></span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== TEAM ====================-->
+               <section class="team section" id="team">
+                <div class="conatiner" >
+                    <h1 class="heading">Meet The Team</h1>
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <img src="{% static 'img/background.jpg' %}" alt="background image" class="card-img">
+                            <img src="{% static 'img/sahil.jpg' %}" alt="profile image" class="profile-img">
+                            <h1>Sahil Thakral</h1>
+                            <span class="button button--flex button--small button--link services__button">
+                                View detail <i class="uil uil-arrow-right button__icon"></i>
+                            </span>
+
+                            <div class="services__modal">
+                                <div class="services__modal-content">
+                                    <h4 class="services__modal-title">About Sahil Thakral</h4>
+                                    <i class="uil uil-times-circle services__modal-close"></i>
+
+                                    <ul class="services__modal-services grid">
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>He is a student of MD University,Rohtak.</p>
+                                        </li>
+
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>He is expert in Python,C,C++.</p>
+                                        </li>
+
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>An Ambitious problem-solving Web Designer & Developer with powerful set of technology skills.</p>
+                                        </li>
+
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>He is belong from Jind.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <ul class="social-media">
+                                <li><a href="https://www.facebook.com/profile.php?id=100071248130891" target="_blank"><i class="uil uil-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/thakral15?r=nametag" target="_blank" ><i class="uil uil-instagram-alt"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/sahil-thakral-086794212" target="_blank"><i class="uil uil-linkedin-alt"></i></a></li>
+                                <li><a href="https://twitter.com/Sahilthakral581?s=08"><i class="uil uil-twitter" target="_blank"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <img src="{% static 'img/background.jpg' %}" alt="background image" class="card-img">
+                            <img src="{% static 'img/ayush2.jpg' %}" alt="profile image" class="profile-img">
+                            <h1>Ayush Jain</h1>
+                            <span class="button button--flex button--small button--link services__button">
+                                View detail <i class="uil uil-arrow-right button__icon"></i>
+                            </span>
+
+                            <div class="services__modal">
+                                <div class="services__modal-content">
+                                    <h4 class="services__modal-title">About Ayush Jain</h4>
+                                    <i class="uil uil-times-circle services__modal-close"></i>
+
+                                    <ul class="services__modal-services grid">
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>He is a student of MD University,Rohtak.</p>
+                                        </li>
+
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>He is expert in Python,C,C++,Web Development.</p>
+                                        </li>
+
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>An Ambitious problem-solving Web Designer & Developer with powerful set of technology skills.</p>
+                                        </li>
+
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>He is belong from Bahadurgarh.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <ul class="social-media">
+                                <li><a href="javascript:void(0)" target="_blank"><i class="uil uil-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/_the_ayush_jain_" target="_blank" ><i class="uil uil-instagram-alt"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/ayush-jain213" target="_blank"><i class="uil uil-linkedin-alt"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="uil uil-twitter" target="_blank"></i></a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="card">
+                            <img src="{% static 'img/background.jpg' %}" alt="background image" class="card-img">
+                            <img src="{% static 'img/aakash.jpg' %}" alt="profile image" class="profile-img">
+                            <h1>Aakashdeep</h1>
+                            <span class="button button--flex button--small button--link services__button">
+                                View detail <i class="uil uil-arrow-right button__icon"></i>
+                            </span>
+
+                            <div class="services__modal">
+                                <div class="services__modal-content">
+                                    <h4 class="services__modal-title">About Aakashdeep</h4>
+                                    <i class="uil uil-times-circle services__modal-close"></i>
+
+                                    <ul class="services__modal-services grid">
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>He is a student of MD University,Rohtak.</p>
+                                        </li>
+
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>Full stack Web Developer</p>
+                                        </li>
+
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>An Ambitious problem-solving Web Designer & Developer with powerful set of technology skills.</p>
+                                        </li>
+
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>He is belong from Rohtak.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <ul class="social-media">
+                                <li><a href="https://m.facebook.com/aakashdeeptechie/" target="_blank"><i class="uil uil-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/aakashdeeptechie/" target="_blank"><i class="uil uil-instagram-alt"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/aakashdeeptechie" target="_blank"><i class="uil uil-linkedin-alt"></i></a></li>
+                                <li><a href="javascript:void(0)"><i class="uil uil-twitter" target="_blank"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <img src="{% static 'img/background.jpg' %}" alt="background image" class="card-img">
+                            <img src="{% static 'img/chirag.jpg' %}" alt="profile image" class="profile-img">
+                            <h1>Chirag Garg</h1>
+                            <span class="button button--flex button--small button--link services__button">
+                                View detail <i class="uil uil-arrow-right button__icon"></i>
+                            </span>
+
+                            <div class="services__modal">
+                                <div class="services__modal-content">
+                                    <h4 class="services__modal-title">About Chirag Garg</h4>
+                                    <i class="uil uil-times-circle services__modal-close"></i>
+
+                                    <ul class="services__modal-services grid">
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>He is a student of KUK University,Kurekshetra.</p>
+                                        </li>
+
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>He is expert in Python,PHP,linux,Sql.</p>
+                                        </li>
+
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>An Ambitious problem-solving Web Designer & Developer with powerful set of technology skills.</p>
+                                        </li>
+
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>He is belong from Rohtak.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <ul class="social-media">
+                                <li><a href="https://www.facebook.com/profile.php?id=100040223028123" target="_blank"><i class="uil uil-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/_chirag_garg_/" target="_blank"><i class="uil uil-instagram-alt"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/chirag-garg-31102001/" target="_blank"><i class="uil uil-linkedin-alt"></i></a></li>
+                                <li><a href=" https://twitter.com/sk_silentknight" target="_blank"><i class="uil uil-twitter"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="card">
+                            <img src="{% static 'img/background.jpg' %}" alt="background image" class="card-img">
+                            <img src="{% static 'img/harshp.jpg' %}" alt="profile image" class="profile-img">
+                            <h1>Harsh</h1>
+                            <span class="button button--flex button--small button--link services__button">
+                                View detail <i class="uil uil-arrow-right button__icon"></i>
+                            </span>
+
+                            <div class="services__modal">
+                                <div class="services__modal-content">
+                                    <h4 class="services__modal-title">About Harsh</h4>
+                                    <i class="uil uil-times-circle services__modal-close"></i>
+
+                                    <ul class="services__modal-services grid">
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>He is a student of Asian Academy Of Films and Television,Delhi.</p>
+                                        </li>
+
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>He is expert in Web Designing.</p>
+                                        </li>
+
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>He is Animation expert.</p>
+                                        </li>
+
+                                        <li class="service__modal-service">
+                                            <i class="uil uil-check-circle services__modal-icon"></i>
+                                            <p>He is belong from Delhi.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <ul class="social-media">
+                                <li><a href="javascript:void(0)" target="_blank"><i class="uil uil-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com/the_only_harshpruthi/" target="_blank"><i class="uil uil-instagram-alt"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/harsh-pruthi-3787a6204/" target="_blank"><i class="uil uil-linkedin-alt"></i></a></li>
+                                <li><a href="javascript:void(0)" target="_blank"><i class="uil uil-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== project ====================-->
+             <section class="portfolio section" id="project">
+                <h2 class="section__title">Projects</h2>
+                <span class="section__subtitle">What i Made</span>
+
+                <div class="portfolio__container container swiper-container mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="{% static 'img/bank1.png'  %}" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Banking Management System</h3>
+                                <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, atque natus consequatur in voluptas blanditiis molestiae quas ut omnis expedita.</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                     <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="{% static 'img/library.jpg' %}" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Library Management System</h3>
+                                <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, atque natus consequatur in voluptas blanditiis molestiae quas ut omnis expedita.</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                     <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="{% static 'img/coming.png' %}" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">We Are Coming Soon</h3>
+                                <p class="portfolio__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, atque natus consequatur in voluptas blanditiis molestiae quas ut omnis expedita.</p>
+                                <a href="#" class="button button--flex button--small portfolio__button">
+                                    Demo
+                                     <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ADD ARROWS -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+
+                    <!-- ADD PAGINATION -->
+                     <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Let's Connect!</h2>
+                <span class="section__subtitle">Get in touch</span>
+
+                <div class="contact__container container gird">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Call Me</h3>
+                                <span class="contact__subtitle">+917404586004</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">vermakunal0601@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-location-point contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Rohtak</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">FullName</label>
+                                <input type="text" name="name" class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" name="email" class="contact__input">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Phone No</label>
+                            <input type="number" name="number" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" id="" cols="0" rows="10" name="message" class="contact__input"></textarea>
+                        </div>
+
+                        <div>
+                            <a href="#" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </form> -->
+
+                    <form action="http://localhost:8000/pofo/contact/" class="contact__form grid" method="post">
+                        {% csrf_token %}
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">FullName</label>
+                                <input type="text" name="name" id="name" class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" name="email" id="email" class="contact__input">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Phone No</label>
+                            <input type="number" name="number" id="number" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="exampleFormControlTextarea1" class="contact__label">Description</label>
+                            <textarea class="contact__input" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="button button--flex button__icon">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Kunal Verma</h1>
+                        <span class="footer__subtitle">Web Developer</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#team" class="footer__link">Team</a>
+                        </li>
+                        <li>
+                            <a href="#project" class="footer__link">Project</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact Me</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/in/kunal-verma-3254a1201" target="_blank" >
+                            <i class="uil uil-linkedin-alt footer__social"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/kunalverma0621" target="_blank" >
+                            <i class="uil uil-instagram-alt footer__social"></i>
+                        </a>
+
+                        <a href="https://twitter.com/KunalVe49986001?s=09" target="_blank" >
+                            <i class="uil uil-twitter-alt footer__social"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer__copy">Designed & Developed By Kunal Verma | &#169; All rights reserved.</p>
+            </div>
+        </footer>
+
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-top-arrow-from-top scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>
